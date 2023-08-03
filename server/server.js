@@ -28,12 +28,14 @@ const dish = dishes.dishes
 
 // Your routes/router(s) should go here
 server.get('/', (req, res) => {
-  res.send('home')
+  res.render('home')
 })
 
 server.get('/dishes/:id', (req, res) => {
-  const id = req.params.id
-  const thisDish = dish.find((obj) => obj['id'] == id)
+  const id = Number(req.params.id)
+
+  const thisDish = dish.find((obj) => obj.id == id)
+
   res.render('dishes', thisDish)
 })
 
