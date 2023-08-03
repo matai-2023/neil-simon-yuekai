@@ -1,5 +1,5 @@
 import * as Path from 'node:path'
-// import * as URL from 'node:url'
+import * as URL from 'node:url'
 
 import express from 'express'
 import hbs from 'express-handlebars'
@@ -18,5 +18,13 @@ server.set('view engine', 'hbs')
 server.set('views', Path.resolve('server/views'))
 
 // Your routes/router(s) should go here
+server.get('/', (req,res) => {
+    res.send('home')
+})
+
+server.get('/dishes/:id', (req,res) => {
+  const id = req.params.id
+  const dish = 
+})
 
 export default server
