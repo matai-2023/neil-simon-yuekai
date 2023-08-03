@@ -1,2 +1,19 @@
-
-  
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Egg Fried Rice",
+      "ingredient1": "rice",
+      "ingredient2": "egg",
+      "ingredient3": "soy sauce",
+      "image": "/images/chilli-jam.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chilli Jam",
+      "ingredient1": "sugar",
+      "ingredient2": "chilli",
+      "image": "/images/egg-fried-rice.jpg"
+    }
+  ]
+}
