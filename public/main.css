@@ -1,16 +1,15 @@
-body{
+body {
   font-family: 'Playfair Display', serif;
-  background-color: #D4B9A6;
+  background-color: #d4b9a6;
   height: 100%;
   width: auto;
-
 }
 
-.header{
+.header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url(../public/images/wooden-table-filled-with-sea-food-items-herbs-spices-plates-fish-dishes-with-sauces-herbs_667286-231.jpeg);
+  background-image: url(./images/dinnerTime.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
@@ -18,79 +17,79 @@ body{
   background-position: center;
 }
 
-.title{
+.title {
   font-size: 100px;
   color: white;
-  background-color: #A15151;
+  background-color: #a15151;
   font-weight: 500;
   letter-spacing: 20px;
   padding-bottom: 30px;
 }
 
-.subtitle{
+.subtitle {
   padding-top: 50px;
   padding-bottom: 200px;
 }
 
-.welcomeMsg{
-font-size: 70px;
-letter-spacing: 10px;
-padding-bottom: 100px;
-font-weight: 400;
+.welcomeMsg {
+  font-size: 70px;
+  letter-spacing: 10px;
+  padding-bottom: 100px;
+  font-weight: 400;
 }
 
-.description{
-font-size: 20px;
-letter-spacing: 5px;
-font-weight: 200;
+.description {
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 200;
 }
 
-.body{
+.body {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 100px;
 }
 
-
-.input{
+.input {
   width: 200px;
   display: inline;
   height: 30px;
   border-radius: 10px;
 }
 
-.input1{
- letter-spacing: 5px;
- margin-left: 150px;
+.input1 {
+  letter-spacing: 5px;
+  margin-left: 150px;
 }
 
-.input2{
+.input2 {
   letter-spacing: 5px;
- }
+}
 
- .input3{
+.input3 {
   letter-spacing: 5px;
   margin-right: 150px;
- }
-
-#cookBtn{
-  width: 70px;
-  height: 70px;
-  margin-top: 50px;
-  /* padding: 20px 40px;
-  border-radius: 50px;
-  margin-top: 100px;
-  background-color: #A15151;
-  color: #FFFFFF; */
 }
 
+#cookBtn {
+  /* display: block;
+  width: 70px;
+  height: 70px; */
 
+  /* margin-top: 50px; */
+
+  padding: 20px 40px;
+  border-radius: 50px;
+  margin-top: 100px;
+  background-color: #a15151;
+  color: #ffffff;
+}
 
 #cookBtn:hover {
   cursor: pointer;
@@ -101,34 +100,34 @@ font-weight: 200;
 /*Using keyframes for shaking an image*/
 @keyframes Shake {
   0% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 
   25% {
-      transform: rotate(-6deg);
+    transform: rotate(-6deg);
   }
 
   50% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 
   75% {
-      transform: rotate(-6deg);
+    transform: rotate(-6deg);
   }
 
   100% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 }
 
-.hr1{
+.hr1 {
   width: 80%;
   margin-top: 100px;
   background-color: black;
   padding-top: 2px;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -138,7 +137,7 @@ font-weight: 200;
 
 /* Page 2 ------------------------------------------------------------------- */
 
-.title2{
+.title2 {
   text-align: center;
   font-size: 100px;
   font-weight: 500;
@@ -148,14 +147,14 @@ font-weight: 200;
   margin-bottom: 100px;
 }
 
-.hr2{
+.hr2 {
   width: 80%;
   padding-top: 2px;
   background-color: black;
   margin-bottom: 200px;
 }
 
-#homeBtn{
+#homeBtn {
   width: 70px;
   height: 70px;
   margin-top: 80px;
@@ -166,8 +165,6 @@ font-weight: 200;
   color: #FFFFFF; */
 }
 
-
-
 #homeBtn:hover {
   cursor: pointer;
   animation: Shake 0.5s linear infinite;
@@ -176,26 +173,25 @@ font-weight: 200;
 /*Using keyframes for shaking an image*/
 @keyframes Shake {
   0% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 
   25% {
-      transform: rotate(-6deg);
+    transform: rotate(-6deg);
   }
 
   50% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 
   75% {
-      transform: rotate(-6deg);
+    transform: rotate(-6deg);
   }
 
   100% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 }
-
 
 .img {
   border: 3px solid black;
@@ -204,9 +200,8 @@ font-weight: 200;
   height: 700px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
-
