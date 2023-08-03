@@ -3,17 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>dinnertime</title>
-    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="icon" href="data:,">
   </head>
   <body>
-    <div class="app">
+    <section class="header">
+        <div>
       <h1 class="title">DinnerTime</h1>
-      <a class="nav" href="/">Home</a>
-      <p>description</p>
-      {{{body}}}
+   
     </div>
+    </section>
+    <section class="body">
+      <div class="subtitle">
+        <p class="welcomeMsg">Welcome! </p>
+        <p class="description">This website will help you to decide which food you will take for your main dish.</p>
+      </div>
+        <form class="form" action="/cook" method="post">
+          <div class="input1"><p>< Ingredient ></p>
+            <input label="text" class="input"  type="text" name="name" value="">
+          </div>
+          <div class="input2"><p>< Ingredient ></p>
+            <input label="Ingredient" class="input"  type="text" name="name" value="">
+          </div>
+          <div class="input3"><p>< Ingredient ></p>
+            <input label="Ingredient" class="input"  type="text" name="name" value="">
+          </div>
+            
+        </form>
+        <div><a href="./dish.html"><i class="em em-fried_egg" id="cookBtn" aria-role="presentation" aria-label="COOKING"></i></a></div>
+        <p>COOK</p>
+    </section>
+    <hr class="hr1">
+    <section class="footer">
+
+        <p>© 2023 Copyright Licensing New Zealand 
+            All rights reserved
+            </p>
+    </section>
   </body>
 </html>
