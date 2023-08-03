@@ -1,0 +1,207 @@
+body{
+  font-family: 'Playfair Display', serif;
+  background-color: #D4B9A6;
+  height: 100%;
+  width: auto;
+
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../public/images/wooden-table-filled-with-sea-food-items-herbs-spices-plates-fish-dishes-with-sauces-herbs_667286-231.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
+}
+
+.title{
+  font-size: 100px;
+  color: white;
+  background-color: #A15151;
+  font-weight: 500;
+  letter-spacing: 20px;
+  padding-bottom: 30px;
+}
+
+.subtitle{
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.welcomeMsg{
+font-size: 70px;
+letter-spacing: 10px;
+padding-bottom: 100px;
+font-weight: 400;
+}
+
+.description{
+font-size: 20px;
+letter-spacing: 5px;
+font-weight: 200;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+
+.input{
+  width: 200px;
+  display: inline;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.input1{
+ letter-spacing: 5px;
+ margin-left: 150px;
+}
+
+.input2{
+  letter-spacing: 5px;
+ }
+
+ .input3{
+  letter-spacing: 5px;
+  margin-right: 150px;
+ }
+
+.cookBtn{
+  padding: 20px 40px;
+  border-radius: 50px;
+  margin-top: 100px;
+  background-color: #A15151;
+  color: #FFFFFF;
+}
+
+.cookBtn:hover{
+  cursor: pointer;
+  background-color: #44403d;
+  color: #A15151 ;
+
+}
+
+.hr1{
+  width: 80%;
+  margin-top: 100px;
+  background-color: black;
+  padding-top: 2px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* Page 2 ------------------------------------------------------------------- */
+
+.title2{
+  text-align: center;
+  font-size: 100px;
+  font-weight: 500;
+  letter-spacing: 20px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hr2{
+  width: 80%;
+  padding-top: 2px;
+  background-color: black;
+  margin-bottom: 200px;
+}
+.homeBtn{
+  padding: 20px 40px;
+  border-radius: 50px;
+  margin-top: 100px;
+  background-color: #A15151;
+  color: #FFFFFF;
+}
+
+.homeBtn:hover{
+  cursor: pointer;
+  background-color: #44403d;
+  color: #A15151 ;
+}
+
+.img {
+  border: 3px solid black;
+  border-radius: 100%;
+  width: 700px;
+  height: 700px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+/* body {
+  background-color: #FFCCCC;
+  font-family: 'Spirax', cursive;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.puppy-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.puppy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+
+.title {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+} */
