@@ -2,18 +2,48 @@
   "dishes": [
     {
       "id": 1,
+      "name": "Dweji Gookbab",
+      "ingredient1": "pork bone",
+      "ingredient2": "rice",
+      "ingredient3": "sesame oil",
+      "image": "/images/dwaeji-gukbap.jpg",
+      "recipe": ["1. Cook pork bone with sesame oil and water", "2. Cook rice", "3. Serve soup with rice and side dishes"]
+    },
+    {
+      "id": 2,
       "name": "Egg Fried Rice",
       "ingredient1": "rice",
       "ingredient2": "egg",
       "ingredient3": "soy sauce",
-      "image": "/images/chilli-jam.jpg"
+      "image": "/images/egg-fried-rice.jpg",
+      "recipe": ["1. Boil rice", "2. Drain rice", "3. Fry rice with egg and soy sauce"]
+    },
+    
+    {
+      "id": 3,
+      "name": "Hainanese Chicken Rice",
+      "ingredient1": "rice",
+      "ingredient2": "chicken",
+      "ingredient3": "soy sauce",
+      "image": "/images/hainanese-chicken-rice.jpg",
+      "recipe": ["1. Boil chicken", "2. Cook rice with chicken stock", "3. Serve rice with chicken and sauce on side"]
     },
     {
-      "id": 2,
+      "id": 4,
+      "name": "Steak & Mash",
+      "ingredient1": "steak",
+      "ingredient2": "potato",
+      "ingredient3": "broccolini",
+      "image": "/images/steak-mash.jpg",
+      "recipe": ["1. Pan-fry steak", "2. Boil and mash potatos", "3. Blanch broccolini", "4. Serve steak with mash and broccolini on side"]
+    },
+    {
+      "id": 5,
       "name": "Chilli Jam",
       "ingredient1": "sugar",
       "ingredient2": "chilli",
-      "image": "/images/egg-fried-rice.jpg"
+      "image": "/images/chilli-jam.jpg",
+      "recipe": ["1. Chop chilli", "2. Cook chilli with sugur until looking like jam", "3. Stock jam in glass can"]
     }
   ]
 }
