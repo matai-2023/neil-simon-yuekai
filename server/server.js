@@ -27,8 +27,25 @@ const dishes = JSON.parse(data)
 const dish = dishes.dishes
 
 // Your routes/router(s) should go here
-server.get('/', (req, res) => {
-  res.render('home')
+
+server.post('/', (req, res) => {
+  let body = req.body
+  console.log(body)
+  console.log(dish)
+  let newDish = []
+  if (body.ingredient1 != null) {
+    newDish = dish.filter((element) => element.ingredient1 == body.ingredient1)
+  }
+  // if (body.ingredient2 != null) {
+  //   newDish = dish.filter((element) => element.ingredient2 == body.ingredient2)
+  // }
+  // if (body.ingredient3 != null) {
+  //   newDish = dish.filter((element) => element.ingredient3 == body.ingredient3)
+  // }
+  const thisDish = newDish[0]
+  console.log(thisDish)
+  //res.redirect('dishes/', thisDish)
+  res.redirect('/dishes/' + thisDish.id)
 })
 
 server.get('/dishes/:id', (req, res) => {
@@ -39,8 +56,8 @@ server.get('/dishes/:id', (req, res) => {
   res.render('dishes', thisDish)
 })
 
-server.post('/', (req, res) => {
-  let body = req.body
-  console.log(body)
+server.get('/', (req, res) => {
+  res.render('home')
 })
+
 export default server
