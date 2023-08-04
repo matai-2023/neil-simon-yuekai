@@ -39,4 +39,8 @@ server.get('/dishes/:id', (req, res) => {
   res.render('dishes', thisDish)
 })
 
+server.post('/', (req, res) => {
+  let body = req.body
+  console.log(body)
+})
 export default server
