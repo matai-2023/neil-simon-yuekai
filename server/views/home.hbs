@@ -9,7 +9,16 @@
         <p class="welcomeMsg">Welcome! </p>
         <p class="description">This website will help you to decide which food you will take for your main dish.</p>
       </div>
-        <form class="form" action="/" method="post">
+      <div class="ingredients">
+        <h4>Ingredients:
+        </h4>
+        <p>rice,  chicken,  pork, sesame oil, </p><p> broccolini,  sugar,  steak,  soy sauce, </p><p> potato,  pork bone,  chilli,  egg </p>
+      </div>
+      <div class="choice">
+        <p>You must choose 3</p>
+      </div>
+
+        <form class="form" action="/dishes/" method="post">
           <div class="input1"><p>< Ingredient ></p>
             <input label="text" class="input"  type="text" name="ingredient1" value="">
           </div>
@@ -20,7 +29,7 @@
             <input label="Ingredient" class="input"  type="text" name="ingredient3" value="">
           </div>
           <div class="btn">
-            <button href="/dishes/:id" type="submit" id="cookBtn">COOK</button>
+            <button href="/dishes/" type="submit" id="cookBtn">COOK</button>
         </div>
         </form>
        
