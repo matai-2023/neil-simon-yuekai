@@ -33,14 +33,9 @@ server.get('/', (req, res) => {
 
 server.get('/dishes/:id', (req, res) => {
   const id = Number(req.params.id)
-
+  console.log(typeof id)
   const thisDish = dish.find((obj) => obj.id == id)
-
   res.render('dishes', thisDish)
 })
 
-server.post('/', (req, res) => {
-  let body = req.body
-  console.log(body)
-})
 export default server
