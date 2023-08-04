@@ -93,7 +93,6 @@ body {
 
 #cookBtn:hover {
   cursor: pointer;
-
   animation: Shake 0.5s linear infinite;
 }
 
@@ -154,18 +153,27 @@ body {
   margin-bottom: 200px;
 }
 
-#homeBtn {
-  width: 70px;
-  height: 70px;
+.btn {
+  position: absolute;
   margin-top: 80px;
-  /* padding: 20px 40px;
-  border-radius: 50px;
-  margin-top: 100px;
-  background-color: #A15151;
-  color: #FFFFFF; */
+}
+.homeBtn {
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
-#homeBtn:hover {
+#homeBtn {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 20px 40px;
+  border-radius: 50px;
+  margin-top: 300px;
+  background-color: #a15151;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.homeBtn:hover {
   cursor: pointer;
   animation: Shake 0.5s linear infinite;
 }

@@ -1,4 +1,9 @@
+      <section class="header">
+        <div>
+      <h1 class="title">DinnerTime</h1>
    
+    </div>
+    </section>
    <section class="body">
       <div class="subtitle">
         <p class="welcomeMsg">Welcome! </p>
@@ -6,17 +11,16 @@
       </div>
         <form class="form" action="/" method="post">
           <div class="input1"><p>< Ingredient ></p>
-            <input label="text" class="input"  type="text" name="name" value="">
+            <input label="text" class="input"  type="text" name="ingredient1" value="">
           </div>
           <div class="input2"><p>< Ingredient ></p>
-            <input label="Ingredient" class="input"  type="text" name="name" value="">
+            <input label="Ingredient" class="input"  type="text" name="ingredient2" value="">
           </div>
           <div class="input3"><p>< Ingredient ></p>
-            <input label="Ingredient" class="input"  type="text" name="name" value="">
+            <input label="Ingredient" class="input"  type="text" name="ingredient3" value="">
           </div>
-          <div>
-            <button href="/dishes" type="submit"id="cookBtn">COOK</button>
-        
+          <div class="btn">
+            <button href="/dishes/:id" type="submit" id="cookBtn">COOK</button>
         </div>
         </form>
        
