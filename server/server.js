@@ -46,6 +46,8 @@ server.post('/dishes', async (req, res) => {
   //console.log(body)
   //console.log(dish)
   let newDish = []
+  let twoSameIngredientDish = []
+  let onlyDish
   // if (
   //   body.ingredient1 != null ||
   //   body.ingredient2 != null ||
@@ -74,35 +76,41 @@ server.post('/dishes', async (req, res) => {
         }
       }
     }
+    //console.log(newDish)
   }
 
   if (body.ingredient2 != null) {
-    for (let i = 0; i < dish.length; i++) {
-      for (const ingredient in dish[i]) {
+    for (let i = 0; i < newDish.length; i++) {
+      for (const ingredient in newDish[i]) {
         //console.log(dish[i][ingredient])
-        if (dish[i][ingredient] == body.ingredient2) {
-          newDish.push(dish[i])
+        if (newDish[i][ingredient] == body.ingredient2) {
+          twoSameIngredientDish.push(newDish[i])
         }
       }
     }
   }
 
-  // if (body.ingredient2 != null) {
-  //   for (let i = 0; i < dish.length; i++) {
-  //     for (const ingredient in dish[i]) {
-  //       if (ingredient == body.ingredient2) newDish.push(dish[i])
-  //     }
-  //   }
-  // }
-  // if (body.ingredient3 != null) {
-  //   newDish = dish.filter((element) => element.ingredient3 == body.ingredient3)
-  // }
-  console.log(newDish)
-  const thisDish = newDish[0]
-  console.log(thisDish)
+  if (body.ingredient3 != null) {
+    for (let i = 0; i < twoSameIngredientDish.length; i++) {
+      for (const ingredient in twoSameIngredientDish[i]) {
+        //console.log(dish[i][ingredient])
+        if (twoSameIngredientDish[i][ingredient] == body.ingredient3) {
+          onlyDish = twoSameIngredientDish[i]
+        }
+      }
+    }
+  }
+
+  const oneInputDish = newDish[0]
+  const twoInputDish = twoSameIngredientDish[0]
+  //console.log(thisDish)
   //res.redirect('dishes/', thisDish)
-  if (thisDish != undefined) {
-    res.redirect('/dishes/' + thisDish.id)
+  if (onlyDish != undefined) {
+    res.redirect('/dishes/' + onlyDish.id)
+  } else if (twoInputDish != undefined) {
+    res.redirect('/dishes/' + twoInputDish.id)
+  } else if (oneInputDish != undefined) {
+    res.redirect('/dishes/' + oneInputDish.id)
   } else {
     //alert()
     res.render('home')
